@@ -1,91 +1,97 @@
+// ===============================
+// Contact Form Validation
+// ===============================
+
 const form = document.getElementById("contactForm");
+
+if(form){
 
 form.addEventListener("submit", function(e){
 
-    e.preventDefault();
+e.preventDefault();
 
-    let fullname = document.getElementById("fullname").value.trim();
+const name = document.getElementById("name").value.trim();
 
-    let email = document.getElementById("email").value.trim();
+const email = document.getElementById("email").value.trim();
 
-    let phone = document.getElementById("phone").value.trim();
+const phone = document.getElementById("phone").value.trim();
 
-    let institute = document.getElementById("institute").value.trim();
+const institute = document.getElementById("institute").value.trim();
 
-    let domain = document.getElementById("domain").value;
+const domain = document.getElementById("domain").value;
 
-    let message = document.getElementById("message").value.trim();
+const message = document.getElementById("message").value.trim();
 
-    let result = document.getElementById("result");
+// Name
 
-    let emailPattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+if(name===""){
 
-    let phonePattern=/^[0-9]{11}$/;
+alert("Please enter your full name.");
 
-    if(fullname==""){
+return;
 
-        result.style.color="red";
+}
 
-        result.innerHTML="Please enter your Full Name.";
+// Email
 
-        return;
+const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    }
+if(!emailPattern.test(email)){
 
-    if(!email.match(emailPattern)){
+alert("Please enter a valid email address.");
 
-        result.style.color="red";
+return;
 
-        result.innerHTML="Please enter a valid Email.";
+}
 
-        return;
+// Phone Number
 
-    }
+const phonePattern=/^[0-9]{11}$/;
 
-    if(!phone.match(phonePattern)){
+if(!phonePattern.test(phone)){
 
-        result.style.color="red";
+alert("Phone number must contain exactly 11 digits.");
 
-        result.innerHTML="Phone number must contain exactly 11 digits.";
+return;
 
-        return;
+}
 
-    }
+// Institute
 
-    if(institute==""){
+if(institute===""){
 
-        result.style.color="red";
+alert("Please enter your institute name.");
 
-        result.innerHTML="Please enter your Institute Name.";
+return;
 
-        return;
+}
 
-    }
+// Domain
 
-    if(domain==""){
+if(domain===""){
 
-        result.style.color="red";
+alert("Please select an internship domain.");
 
-        result.innerHTML="Please select an Internship Domain.";
+return;
 
-        return;
+}
 
-    }
+// Message
 
-    if(message.length<20){
+if(message.length<20){
 
-        result.style.color="red";
+alert("Message should contain at least 20 characters.");
 
-        result.innerHTML="Message must contain at least 20 characters.";
+return;
 
-        return;
+}
 
-    }
+// Success
 
-    result.style.color="green";
+alert("Congratulations! Your internship application has been submitted successfully.");
 
-    result.innerHTML="Application Submitted Successfully!";
-
-    form.reset();
+form.reset();
 
 });
+
+}

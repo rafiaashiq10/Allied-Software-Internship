@@ -2,16 +2,31 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Allied Software Engineers</title>
+
+    <title>Contact | Allied Software Engineers</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ================= HEADER ================= -->
 
     <header>
 
@@ -21,11 +36,17 @@
 
                 <img src="https://www.alliedsoftwareengineers.com/logo.png" alt="Logo">
 
-                <h2>Allied Software Engineers</h2>
+                <div>
+
+                    <h2>Allied Software Engineers</h2>
+
+                    <p>Software Solutions that Work</p>
+
+                </div>
 
             </div>
 
-            <ul>
+            <ul class="nav-links">
 
                 <li><a href="index.html">Home</a></li>
 
@@ -41,74 +62,181 @@
 
     </header>
 
-    <!-- Banner -->
+    <!-- ================= PAGE BANNER ================= -->
 
     <section class="page-banner">
 
         <h1>Contact Us</h1>
 
-        <p>Apply for Internship Today</p>
+        <p>Apply for Our Internship Program</p>
 
     </section>
 
-    <!-- Contact Form -->
+    <!-- ================= CONTACT SECTION ================= -->
 
     <section class="contact">
 
-        <form id="contactForm">
+        <div class="contact-container">
 
-            <h2>Internship Application</h2>
+            <!-- Left Side -->
 
-            <input type="text" id="fullname" placeholder="Full Name">
+            <div class="contact-info">
 
-            <input type="email" id="email" placeholder="Email Address">
+                <h2>Get In Touch</h2>
 
-            <input type="text" id="phone" placeholder="Phone Number">
+                <p>
 
-            <input type="text" id="institute" placeholder="Institute Name">
+                    We are happy to answer your questions regarding our internship
+                    program.
 
-            <select id="domain">
+                </p>
 
-                <option value="">Select Domain</option>
+                <p>
 
-                <option>Web Development</option>
+                    <i class="fa-solid fa-location-dot"></i>
 
-                <option>Artificial Intelligence</option>
+                    Lahore, Pakistan
 
-                <option>Mobile App Development</option>
+                </p>
 
-                <option>UI / UX Design</option>
+                <p>
 
-                <option>Graphic Designing</option>
+                    <i class="fa-solid fa-envelope"></i>
 
-            </select>
+                    info@alliedsoftwareengineers.com
 
-            <textarea
-                id="message"
-                rows="6"
-                placeholder="Write your message..."></textarea>
+                </p>
 
-            <button type="submit" class="btn">
+                <p>
 
-                Submit Application
+                    <i class="fa-solid fa-phone"></i>
 
-            </button>
+                    +92 300 1234567
 
-            <p id="result"></p>
+                </p>
 
-        </form>
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="contact-form">
+
+                <form id="contactForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name">
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address">
+
+                    <input
+                        type="text"
+                        id="phone"
+                        placeholder="Phone Number">
+
+                    <input
+                        type="text"
+                        id="institute"
+                        placeholder="Institute Name">
+
+                    <select id="domain">
+
+                        <option value="">Select Domain</option>
+
+                        <option>Web Development</option>
+
+                        <option>Mobile App Development</option>
+
+                        <option>Artificial Intelligence</option>
+
+                        <option>UI / UX Design</option>
+
+                    </select>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Write Your Message"></textarea>
+
+                    <button class="btn" type="submit">
+
+                        Submit Application
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
 
     </section>
 
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <p>
+        <div class="footer-container">
 
-            © 2026 Allied Software Engineers | All Rights Reserved
+            <div>
+
+                <h3>Allied Software Engineers</h3>
+
+                <p>
+
+                    Software Solutions that Work.<br>
+
+                    Innovation that Inspires.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="internship.html">Internship</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Follow Us</h3>
+
+                <i class="fab fa-facebook"></i>
+
+                <i class="fab fa-linkedin"></i>
+
+                <i class="fab fa-instagram"></i>
+
+                <i class="fab fa-github"></i>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 Allied Software Engineers | All Rights Reserved.
 
         </p>
 
     </footer>
+
+    <!-- JavaScript -->
 
     <script src="js/script.js"></script>
 

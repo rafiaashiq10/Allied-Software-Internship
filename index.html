@@ -4,9 +4,25 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Allied Software Engineers</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -14,7 +30,9 @@
 
 <body>
 
-    <!-- Navbar -->
+    <!-- ==========================
+         HEADER
+    =========================== -->
 
     <header>
 
@@ -22,15 +40,21 @@
 
             <div class="logo">
 
-                <img src="https://www.alliedsoftwareengineers.com/logo.png" alt="Logo">
+                <img src="https://www.alliedsoftwareengineers.com/logo.png" alt="Company Logo">
 
-                <h2>Allied Software Engineers</h2>
+                <div>
+
+                    <h2>Allied Software Engineers</h2>
+
+                    <p>Software Solutions that Work</p>
+
+                </div>
 
             </div>
 
-            <ul>
+            <ul class="nav-links">
 
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
 
                 <li><a href="about.html">About</a></li>
 
@@ -44,75 +68,174 @@
 
     </header>
 
-    <!-- Hero -->
+    <!-- ==========================
+         HERO SECTION
+    =========================== -->
 
     <section class="hero">
 
-        <div class="hero-text">
+        <div class="hero-left">
 
-            <h1>Software Solutions that Work<br>Innovation that Inspires</h1>
+            <h1>Build Your Career With Allied Software Engineers</h1>
 
-            <p>Kick-start your career with Allied Software Engineers Internship Program.</p>
+            <p>
 
-            <a href="internship.html" class="btn">Explore Internship</a>
+                Join our internship program to gain practical experience,
+                work on real-world projects, and learn from experienced software engineers.
+
+            </p>
+
+            <a href="internship.html" class="btn">
+
+                Apply Now
+
+            </a>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img src="https://www.alliedsoftwareengineers.com/static/media/office.075fd229216d56417c5b.jpeg" alt="Hero Image">
 
         </div>
 
     </section>
 
-    <!-- Welcome -->
+    <!-- ==========================
+         STATISTICS
+    =========================== -->
 
-    <section class="welcome">
+    <section class="stats">
 
-        <h2>Welcome</h2>
+        <div class="stat-card">
 
-        <p>
+            <i class="fa-solid fa-user-graduate"></i>
 
-            Allied Software Engineers provides students with practical industry experience
+            <h2>500+</h2>
 
-            through hands-on internships guided by experienced software professionals.
+            <p>Students Trained</p>
 
-        </p>
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h2>120+</h2>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h2>40+</h2>
+
+            <p>Professional Mentors</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h2>95%</h2>
+
+            <p>Success Rate</p>
+
+        </div>
 
     </section>
 
-    <!-- Domains -->
+    <!-- ==========================
+         DOMAINS
+    =========================== -->
 
     <section class="domains">
 
         <h2>Internship Domains</h2>
 
-        <div class="cards">
+        <p>
 
-            <div class="card">
+            Choose your desired career path.
+
+        </p>
+
+        <div class="domain-container">
+
+            <div class="domain-card">
+
+                <i class="fa-solid fa-code"></i>
 
                 <h3>Web Development</h3>
 
-                <p>HTML, CSS, JavaScript, Bootstrap</p>
+                <p>
+
+                    HTML
+
+                    CSS
+
+                    JavaScript
+
+                    React
+
+                </p>
 
             </div>
 
-            <div class="card">
+            <div class="domain-card">
 
-                <h3>Artificial Intelligence</h3>
-
-                <p>Machine Learning & Python</p>
-
-            </div>
-
-            <div class="card">
+                <i class="fa-solid fa-mobile-screen"></i>
 
                 <h3>Mobile Development</h3>
 
-                <p>Flutter & Firebase</p>
+                <p>
+
+                    Flutter
+
+                    Android
+
+                    Firebase
+
+                </p>
 
             </div>
 
-            <div class="card">
+            <div class="domain-card">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <h3>Artificial Intelligence</h3>
+
+                <p>
+
+                    Python
+
+                    Machine Learning
+
+                    Deep Learning
+
+                </p>
+
+            </div>
+
+            <div class="domain-card">
+
+                <i class="fa-solid fa-pen-ruler"></i>
 
                 <h3>UI / UX Design</h3>
 
-                <p>Figma & Adobe XD</p>
+                <p>
+
+                    Figma
+
+                    Adobe XD
+
+                    Prototyping
+
+                </p>
 
             </div>
 
@@ -120,13 +243,79 @@
 
     </section>
 
-    <!-- Footer -->
+    <!-- ==========================
+         WHY CHOOSE US
+    =========================== -->
+
+    <section class="why-us">
+
+        <h2>Why Choose Allied Software Engineers?</h2>
+
+        <div class="why-container">
+
+            <div class="why-box">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3>Real Projects</h3>
+
+                <p>
+
+                    Gain experience by working on industry-level projects.
+
+                </p>
+
+            </div>
+
+            <div class="why-box">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <h3>Expert Mentors</h3>
+
+                <p>
+
+                    Learn directly from experienced software engineers.
+
+                </p>
+
+            </div>
+
+            <div class="why-box">
+
+                <i class="fa-solid fa-certificate"></i>
+
+                <h3>Internship Certificate</h3>
+
+                <p>
+
+                    Receive an official completion certificate.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
 
     <footer>
 
+        <h3>Allied Software Engineers</h3>
+
         <p>
 
-            © 2026 Allied Software Engineers
+            Software Solutions that Work • Innovation that Inspires
+
+        </p>
+
+        <p>
+
+            © 2026 Allied Software Engineers. All Rights Reserved.
 
         </p>
 
